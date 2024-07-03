@@ -1,4 +1,4 @@
-# PHP-MySQL-tutorial
+# PHP/MySQL-tutorial
 
 Learned:
 
