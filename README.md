@@ -66,6 +66,18 @@ Place session_start(); in a php tag before the rest of your code.
 
 You can then create named value pairs within our SGB by using i.e. $_SESSION["username"] = "Buckle23" then echo $_SESSION["username"];
 
+<h3>Server</h3>
+
+The server SGB contains headers, paths and script locations. The entries in this array are created by the web server. It shows nearly everything you need to know about the current web page env.
+
+To access the server SGB type $_SERVER["PHP_SELF"];
+
+<h3>Password Hashing</h3>
+
+Password hasing is transforming sensitive data (password) into letters, numbers, and/or symbols via a mathematical process (similar to encryption). It hides the original data from 3rd parties.
+
+Use the password_has($password, PASSWORD_DEFAULT); function.
+
 <h3>Tutorial video</h3>
 
 [PHP Full Course](https://www.youtube.com/watch?v=zZ6vybT1HQs)
