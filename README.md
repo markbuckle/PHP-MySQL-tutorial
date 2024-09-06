@@ -32,6 +32,12 @@ $_POST means the data is packaged inside the body of the HTTP request.
 <li>you cannot bookmark</li>
 <li>Post requests are better for submitting credentials.</li>
 
+<h3>Sanitize / Validate Input</h3>
+
+You can sanitize your code with functions like the filter_input(INPUT_POST, "username", FILTER_SANITIZE_SPECIAL_CHARS) function. 
+
+More details on this can be found at [2:44:30](https://youtu.be/zZ6vybT1HQs?feature=shared&t=9870)
+
 <h3>Tutorial video</h3>
 
 [PHP Full Course](https://www.youtube.com/watch?v=zZ6vybT1HQs)
