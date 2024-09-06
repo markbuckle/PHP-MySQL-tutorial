@@ -32,11 +32,39 @@ $_POST means the data is packaged inside the body of the HTTP request.
 <li>you cannot bookmark</li>
 <li>Post requests are better for submitting credentials.</li>
 
-<h3>Sanitize / Validate Input</h3>
+<h3>Sanitize & Validate Input</h3>
 
-You can sanitize your code with functions like the filter_input(INPUT_POST, "username", FILTER_SANITIZE_SPECIAL_CHARS) function. 
+Sanitizing and validating user input is always a good idea in case the rare user decides to input malicious content.
+
+You can **sanitize** your code with functions like: 
+<li>$username = filter_input(INPUT_POST, "username", FILTER_SANITIZE_SPECIAL_CHARS);</li>
+<li>$age = filter_input(INPUT_POST, "age", FILTER_SANITIZE_NUMBER_INT);</li>
+<li>$email = filter_input(INPUT_POST, "email", FILTER_SANITIZE_EMAIL);</li>
+
+You can **validate** your code with tests like: 
+
+<li>$age = filter_input(INPUT_POST, "age", FILTER_VALIDATE_INT);</li>
+<li>$email = filter_input(INPUT_POST, "email", FILTER_VALIDATE_EMAIL);</li>
 
 More details on this can be found at [2:44:30](https://youtu.be/zZ6vybT1HQs?feature=shared&t=9870)
+
+<h3>Cookies</h3>
+
+To print values from cookies, do as follows:
+
+setCookie(key, value, time() + time til expiry, path);
+
+foreach($_COOKIE as $key => $value){
+  echo"{$key} = {value} <br>";
+  }
+
+<h3>Sessions</h3>
+
+A session is a super global varable (SGB) used to store information on a user to be used across multiple pages. A user is assigned a session-id ex. login credentials. Any login websites i.e. Facebook use sessions.
+
+Place session_start(); in a php tag before the rest of your code.
+
+You can then create named value pairs within our SGB by using i.e. $_SESSION["username"] = "Buckle23" then echo $_SESSION["username"];
 
 <h3>Tutorial video</h3>
 
