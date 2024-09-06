@@ -78,6 +78,10 @@ Password hasing is transforming sensitive data (password) into letters, numbers,
 
 Use the password_has($password, PASSWORD_DEFAULT); function.
 
+<h3>PHP connect to MySQL</h3>
+
+
+
 <h3>Tutorial video</h3>
 
 [PHP Full Course](https://www.youtube.com/watch?v=zZ6vybT1HQs)
