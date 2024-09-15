@@ -93,7 +93,7 @@ Create a file called database.php
 You should be able to view the output at http://localhost/tutorial-website/database.php
 
 To create a table like this:
-<img src= />
+<img src="https://github.com/markbuckle/PHP-MySQL-tutorial/blob/main/PHP-table.png" max-width=600 />
 
 <h3>Tutorial video</h3>
 
