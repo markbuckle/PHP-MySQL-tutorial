@@ -80,7 +80,20 @@ Use the password_has($password, PASSWORD_DEFAULT); function.
 
 <h3>PHP connect to MySQL</h3>
 
+Go to http://localhost/phpmyadmin/
 
+This url allows to you to configure your database. You can make SQL queries, monitor the status, export/import data, etc.
+
+Create a db for this tutorial called tutorialdb
+
+Go to the User Accounts Overview at http://localhost/phpmyadmin/index.php?route=/server/privileges&viewing_mode=server
+
+Create a file called database.php
+
+You should be able to view the output at http://localhost/tutorial-website/database.php
+
+To create a table like this:
+<img src= />
 
 <h3>Tutorial video</h3>
 
