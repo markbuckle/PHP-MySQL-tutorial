@@ -80,6 +80,12 @@ Use the password_has($password, PASSWORD_DEFAULT); function.
 
 <h3>PHP connect to MySQL</h3>
 
+There's two popular ways to connect PHP to MySQL:
+1) MySQLi Extension
+2) PDO (PHP Data Objects) - many developers use PDO's because they can connect to 12 or more database types.
+
+For the purpose of this tutorial we will just be using the MySQLi extension
+
 Go to http://localhost/phpmyadmin/
 
 This url allows to you to configure your database. You can make SQL queries, monitor the status, export/import data, etc.
