@@ -1,23 +1,22 @@
+<!-- php query example -->
 <?php
 include("database.php");
 
-$username = "Patrick";
-$password = "rock3";
-$hash = password_hash($password, PASSWORD_DEFAULT);
+$sql = "SELECT * FROM users";
+// this query function returns an object
+$result = mysqli_query($conn, $sql);
 
-// write a query within a variable. Users is the database. User and password are columns.
-$sql = "INSERT INTO users (user, password)
-        VALUES ('$username', '$hash')";
-
-// try blocks allow you to give back different messages if the code breaks / fails
-try {
-    // submit the query. Pass in the connection and the query.
-    mysqli_query($conn, $sql);
-    echo "User is now registered";
-}
-// if we encounter a problem, let's catch it
-catch (mysqli_sql_exception) {
-    echo "Could not register user";
+// function that returns how many rows are in our results
+if (mysqli_num_rows($result) > 0) {
+    // this function returns the next available row within our object. If you need data from more than one row, use a while loop
+    while ($row = mysqli_fetch_assoc($result)) {
+        echo $row["id"] . "<br>";
+        echo $row["user"] . "<br>";
+        echo $row["reg_date"] . "<br>";
+    }
+    ;
+} else {
+    echo "No user found";
 }
 // close the connection
 mysqli_close($conn);
