@@ -80,6 +80,12 @@ Use the password_has($password, PASSWORD_DEFAULT); function.
 
 <h3>PHP connect to MySQL</h3>
 
+There's two popular ways to connect PHP to MySQL:
+1) MySQLi Extension
+2) PDO (PHP Data Objects) - many developers use PDO's because they can connect to 12 or more database types.
+
+For the purpose of this tutorial we will just be using the MySQLi extension
+
 Go to http://localhost/phpmyadmin/
 
 This url allows to you to configure your database. You can make SQL queries, monitor the status, export/import data, etc.
@@ -93,7 +99,7 @@ Create a file called database.php
 You should be able to view the output at http://localhost/tutorial-website/database.php
 
 To create a table like this:
-<img src= />
+<img src="https://github.com/markbuckle/PHP-MySQL-tutorial/blob/main/PHP-table.png" max-width=600 />
 
 <h3>Tutorial video</h3>
 
